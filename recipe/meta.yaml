@@ -1,5 +1,5 @@
 {% set name = "excelcsvparsehelper-with-locking" %}
-{% set version = "1.1.5" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ build:
 
 requirements:
   run:
-    - excelcsvparsehelper >=1.1.5
+    - excelcsvparsehelper >=1.2.0
     - lockfilesemaphore >=3.0.2
 
 test:
