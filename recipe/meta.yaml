@@ -1,18 +1,17 @@
 {% set name = "excelcsvparsehelper-with-locking" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 build:
+  noarch: generic
   number: 0
-  # Windows-only meta-package (deps are Windows-only)
-  skip: true  # [not win]
 
 requirements:
   run:
-    - excelcsvparsehelper >=1.2.1
+    - excelcsvparsehelper >=1.2.3
     - lockfilesemaphore >=3.0.2
 
 test:
@@ -25,7 +24,7 @@ test:
 about:
   home: https://pypi.org/project/ExcelCSVParseHelper/
   doc_url: https://pypi.org/project/LockFileSemaphore/
-  summary: "Metapackage that installs ExcelCSVParseHelper and LockFileSemaphore (Windows only)."
+  summary: "Metapackage that installs ExcelCSVParseHelper and LockFileSemaphore."
   license: MIT
   license_file: LICENSE
 
